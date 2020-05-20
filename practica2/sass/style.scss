@@ -1,0 +1,133 @@
+@import 'media-queries';
+
+@font-face {
+    font-family: 'HeroLight';
+    src: url('../fonts/hero_light-webfont.eot');
+    src: url('../fonts/hero_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hero_light-webfont.woff2') format('woff2'),
+         url('../fonts/hero_light-webfont.woff') format('woff'),
+         url('../fonts/hero_light-webfont.ttf') format('truetype'),
+         url('../fonts/hero_light-webfont.svg#hero_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hero';
+    src: url('../fonts/hero-webfont.eot');
+    src: url('../fonts/hero-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hero-webfont.woff2') format('woff2'),
+         url('../fonts/hero-webfont.woff') format('woff'),
+         url('../fonts/hero-webfont.ttf') format('truetype'),
+         url('../fonts/hero-webfont.svg#hero') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mobile-nav{
+    @include respond-to($large-desktop){
+        display: none !important;
+    }
+    @include respond-to($tablet-portrait){
+        display: none !important;
+    }
+    @include respond-to($tablet-landscape){
+        display: none !important;
+    }
+}
+
+.t-white{
+    color: #c5d3dc !important;
+}
+
+.desktop-nav{
+
+    @include respond-to($phone){
+        display: none !important;
+    }
+}
+
+#logo_nav{
+    width: 60%;
+}
+
+#bottom-bg, #ux_img{
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+    width: 100%;
+    border-width: 0.188em;
+    border-color: #4ac3ee;
+}
+
+.title-h{
+    font-family: 'Hero';
+    font-size: 3em;
+
+    @include respond-to($phone){
+        font-size: 2em;
+    }
+}
+
+.nav-h{
+    font-family: 'Hero';
+    font-size: 1.5em;
+    color: black;
+}
+
+.border{
+    border-width: 0.08em !important;
+    border-color: #4ac3ee !important;
+}
+
+.ui-ux{
+    color: #4ac3ee;
+}
+
+.perfiles-profesionales{
+    color: black;
+    border-color: black !important;
+}
+
+.img-description{
+    font-family: 'Hero';
+    font-size: 3em;
+    color: white;
+    @include respond-to($tablet-portrait){
+        font-size: 2.2em;
+    }
+    @include respond-to($phone){
+        font-size: 1.4em;
+    }
+}
+
+.description-h{
+    font-family: 'HeroLight';
+}
+
+.resha-ho{
+    font-family: 'Hero';
+    color: #f8981d;
+}
+
+.resha-hlb{
+    font-family: 'Hero';
+    color: #4ac3ee;
+}
+
+.resha-hg{
+    font-family: 'Hero';
+    color: #76c26a;
+}
+
+.resha-hlp{
+    font-family: 'Hero';
+    color: #c5d3dc;
+}
+
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
